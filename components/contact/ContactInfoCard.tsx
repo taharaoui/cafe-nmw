@@ -13,9 +13,9 @@ export default function ContactInfoCard() {
     >
       <h3 className="text-xl text-coffee-dark">Adresse & horaires</h3>
       <p className="mt-4 text-sm leading-8 text-ink/70">
-        142 Rue Saint-Paul, Montréal, QC
+        3054A Chem. d&apos;Oka, Sainte-Marthe-sur-le-Lac, QC J0N 1P0
         <br />
-        Tous les jours · 7h30–18h00
+        Lun–Dim · horaires détaillés sur la page contact
       </p>
       <div className="mt-8 space-y-3 text-sm text-ink/70">
         <p>Parking disponible à proximité</p>

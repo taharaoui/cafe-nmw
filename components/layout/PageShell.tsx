@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 export type PageShellProps = {
   title: string;
@@ -45,7 +44,7 @@ export default function PageShell({
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65 }}
-              className="eyebrow text-coffee-dark"
+              className="eyebrow text-gold"
             >
               {eyebrow}
             </motion.p>
@@ -53,7 +52,7 @@ export default function PageShell({
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, delay: 0.08 }}
-              className="mt-6 max-w-3xl text-4xl leading-[0.95] text-coffee-dark sm:text-5xl lg:text-6xl"
+              className="mt-6 max-w-3xl text-4xl leading-[0.95] text-gold sm:text-5xl lg:text-6xl"
             >
               {title}
             </motion.h1>
@@ -61,7 +60,7 @@ export default function PageShell({
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, delay: 0.16 }}
-              className="mt-6 max-w-2xl text-lg leading-8 text-coffee-dark/80"
+              className="mt-6 max-w-2xl text-lg leading-8 text-gold/90"
             >
               {intro}
             </motion.p>
@@ -71,19 +70,30 @@ export default function PageShell({
               transition={{ duration: 0.75, delay: 0.24 }}
               className="mt-8"
             >
-              <Link
-                href={ctaHref}
-                className="group inline-flex items-center gap-3 rounded-full border border-coffee/15 bg-cream/90 px-6 py-3 text-sm font-medium text-coffee-dark transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
-              >
-                <span>{ctaLabel}</span>
-                <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
+              {ctaHref?.startsWith("http") ? (
+                <a
+                  href={ctaHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group inline-flex items-center gap-3 rounded-full border border-coffee/15 bg-cream/90 px-6 py-3 text-sm font-medium text-coffee-dark transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
+                >
+                  <span>{ctaLabel}</span>
+                  <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+                </a>
+              ) : (
+                <Link
+                  href={ctaHref}
+                  className="group inline-flex items-center gap-3 rounded-full border border-coffee/15 bg-cream/90 px-6 py-3 text-sm font-medium text-coffee-dark transition-all duration-300 hover:-translate-y-0.5 hover:bg-white"
+                >
+                  <span>{ctaLabel}</span>
+                  <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              )}
             </motion.div>
           </div>
         </section>
         {children}
       </main>
-      <Footer />
     </div>
   );
 }

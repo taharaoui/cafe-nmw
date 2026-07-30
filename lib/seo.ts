@@ -13,24 +13,36 @@ export const jsonLd = {
   telephone: "+1-514-555-0123",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "142 Rue Saint-Paul",
-    addressLocality: "Montréal",
+    streetAddress: "3054A Chem. d'Oka",
+    addressLocality: "Sainte-Marthe-sur-le-Lac",
     addressRegion: "QC",
-    postalCode: "H2Y 1G8",
+    postalCode: "J0N 1P0",
     addressCountry: "CA",
   },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday"],
+      opens: "07:30",
+      closes: "16:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Thursday", "Friday"],
       opens: "07:30",
       closes: "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Saturday", "Sunday"],
-      opens: "08:30",
-      closes: "18:00",
+      dayOfWeek: ["Saturday"],
+      opens: "08:00",
+      closes: "16:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Sunday"],
+      opens: "09:00",
+      closes: "16:00",
     },
   ],
 };

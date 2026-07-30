@@ -8,12 +8,12 @@ const details = [
   {
     icon: MapPin,
     label: "Adresse",
-    value: "142 Rue Saint-Paul, Montréal, QC H2Y 1G8",
+    value: "3054A Chem. d'Oka, Sainte-Marthe-sur-le-Lac, QC J0N 1P0",
   },
   {
     icon: Clock,
     label: "Horaires",
-    value: "Lun–Ven : 7h30–18h · Sam–Dim : 8h30–18h",
+    value: "Lun : 7h30–16h00 · Mar : 7h30–16h00 · Mer : 7h30–16h00 · Jeu : 7h30–18h00 · Ven : 7h30–18h00 · Sam : 8h00–16h00 · Dim : 9h00–16h00",
   },
   {
     icon: Car,

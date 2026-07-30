@@ -27,7 +27,7 @@ export default function FlowerBar() {
             Chaque semaine, une sélection de fleurs fraîches arrive au bar.
             Installez-vous au comptoir, laissez-vous guider par notre
             fleuriste et repartez avec un bouquet entièrement personnel — ou
-            offrez-le à quelqu'un que vous aimez.
+            offrez-le à quelqu&apos;un que vous aimez.
           </p>
           <div className="mt-8">
             <Button href="#contact" variant="secondary">

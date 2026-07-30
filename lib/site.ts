@@ -4,11 +4,9 @@ export type SiteLink = {
 };
 
 export const siteLinks: SiteLink[] = [
-  { label: "Accueil", href: "/" },
-  { label: "Café", href: "/cafe" },
+  { label: "Menu", href: "/menu" },
   { label: "Flower Bar", href: "/flower-bar" },
   { label: "Boutique", href: "/boutique" },
-  { label: "Menu", href: "/menu" },
   { label: "À propos", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -16,6 +14,6 @@ export const siteLinks: SiteLink[] = [
 export const brand = {
   name: "NMW Café Galerie Boutique",
   slogan: "No Matter What",
-  address: "142 Rue Saint-Paul, Montréal, QC",
-  hours: "Tous les jours · 7h30–18h00",
+  address: "3054A Chem. d'Oka, Sainte-Marthe-sur-le-Lac, QC J0N 1P0",
+  hours: "Lun–Dim · horaires détaillés sur la page contact",
 };

@@ -60,14 +60,14 @@ export default function Navbar() {
         </ul>
 
         <Link
-          href="/contact"
+          href="/commander"
           className={`hidden rounded-full px-5 py-2.5 text-sm font-medium transition-colors lg:inline-block ${
             scrolled
               ? "bg-coffee text-cream hover:bg-coffee-dark"
               : "bg-cream text-coffee-dark hover:bg-gold"
           }`}
         >
-          Réserver
+          Commander
         </Link>
 
         <button
@@ -115,11 +115,11 @@ export default function Navbar() {
                 className="pt-4"
               >
                 <Link
-                  href="/contact"
+                  href="/commander"
                   onClick={() => setOpen(false)}
                   className="inline-block rounded-full bg-coffee px-6 py-3 text-sm font-medium text-cream"
                 >
-                  Réserver
+                  Commander
                 </Link>
               </motion.li>
             </ul>

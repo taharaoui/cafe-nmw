@@ -18,17 +18,13 @@ export default function SectionTitle({
   light = false,
 }: SectionTitleProps) {
   return (
-    <div
-      className={`max-w-2xl ${align === "center" ? "mx-auto text-center" : ""}`}
-    >
+    <div className={`max-w-2xl ${align === "center" ? "mx-auto text-center" : ""}`}>
       <motion.span
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.6 }}
-        className={`eyebrow ${align === "center" ? "justify-center before:hidden after:block after:h-px after:w-8 after:bg-gold" : ""} ${
-          light ? "text-gold-light" : ""
-        }`}
+        className={`eyebrow ${align === "center" ? "justify-center before:hidden after:block after:h-px after:w-8 after:bg-[#111111]" : ""} ${light ? "text-[#111111]" : "text-[#666666]"}`}
       >
         {eyebrow}
       </motion.span>
@@ -37,9 +33,7 @@ export default function SectionTitle({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7, delay: 0.05 }}
-        className={`mt-4 text-3xl leading-tight md:text-4xl lg:text-[2.75rem] font-medium ${
-          light ? "text-cream" : "text-coffee-dark"
-        }`}
+        className={`mt-4 text-3xl leading-tight md:text-4xl lg:text-[2.75rem] font-medium ${light ? "text-[#111111]" : "text-[#111111]"}`}
       >
         {title}
       </motion.h2>
@@ -49,9 +43,7 @@ export default function SectionTitle({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className={`mt-4 text-base leading-relaxed ${
-            light ? "text-cream/80" : "text-ink/70"
-          }`}
+          className={`mt-4 text-base leading-relaxed ${light ? "text-[#666666]" : "text-[#666666]"}`}
         >
           {description}
         </motion.p>
